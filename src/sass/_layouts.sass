@@ -1,0 +1,112 @@
+.container
+	position: relative
+	padding-left: 200px
+	padding-right: 200px
+	width: 100%
+	height: 100%
+	&.nav-container
+		padding-left: 95px
+		padding-right: 95px
+	&.header-container
+		display: flex
+		flex-direction: column
+		justify-content: center
+	&.section-container
+		padding-top: 140px
+		&.last
+			padding-bottom: 140px
+
+.default-content-wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	&.reverse
+		flex-direction: row-reverse
+	p
+		margin-top: 35px
+	.default-content-left
+		width: 38%
+	.default-content-right
+		width: 50%
+		img
+			max-width: 100%
+			height: 100% 
+			object-fit: cover 
+	.button
+		margin-top: 50px
+
+.section
+	position: relative
+	&.with-bg
+		background-repeat: no-repeat
+		background-size: cover
+		padding: 180px 0px
+		.container
+			display: flex
+			justify-content: flex-end
+		.with-bg-block
+			color: white
+			background: $main-color
+			padding: 100px 100px
+			padding-right: 170px
+			width: 51vw
+			p
+				margin-top: 35px
+
+.main-footer
+	background: $main-color
+	padding: 100px 0
+	padding-bottom: 140px
+	position: relative
+	color: white
+	hr
+		margin-top: 100px 
+		opacity: .1
+
+
+.footer-top 
+	display: flex
+	width: 100%
+	justify-content: space-between
+
+.footer-top-left
+	width: 40%
+	p
+		margin-top: 25px
+	button
+		margin-top: 50px
+
+.footer-top-right
+	width: 32%
+	span
+		margin-top: 14px
+		display: inline-block
+		opacity: .8
+
+.footer-contant-wrapper
+	margin-bottom: 50px
+
+.footer-bottom
+	width: 100%
+	display: flex
+	justify-content: space-between
+	margin-top: 50px
+	button
+		margin-top: 30px
+
+.footer-bottom-left
+	width: 8%
+
+.footer-bottom-right
+	width: 80%
+
+.representations
+	display: flex
+	width: 100%
+	justify-content: space-between
+	p
+		margin-left: 90px
+		width: 30%
+		line-height: 1.7em
+		opacity: .8

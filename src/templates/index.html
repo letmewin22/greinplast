@@ -1,0 +1,168 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+<div class="navbar">
+  <div class="container nav-container">
+    <a href="#">
+      <img src="img/logo-min.png" alt="greinplast">
+    </a>
+    <nav>
+      <ul>
+        <li>фасады</li>
+        <li>интерьеры</li>
+        <li><a href="#">продукция</a></li>
+        <li>компания</li>
+        <li><a href="#">блог</a></li>
+        <li><a href="#">контакты</a></li>
+      </ul>
+    </nav>
+    <button class="button border-button nav-button">
+      <span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Связаться с нами</span>
+    </button>
+  </div>
+</div>
+<header class="main-header">
+  <div class="header-bg" style="background-image: url(img/main/main-1.jpg); opacity: 0"></div>
+  <div class="header-bg" style="background-image: url(img/main/main-2.jpg); opacity: 1"></div>
+  <div class="header-bg" style="background-image: url(img/main/main-3.jpg); opacity: 0"></div>
+  <div class="container header-container">
+    <span class="main-descriptor">Greinplast — эстетика жизненного пространства</span>
+    <h1 class="main-h1"><span data-bg="0" class="h1-links"><a href="#">Утепляем фасады</a><span class="line"></span></span>,
+      проводим <span data-bg="1" class="h1-links"><a href="#">ремонтные работы</a><span class="line"></span></span> и
+      продаем <span data-bg="2" class="h1-links"><a href="#">отделочные материалы</a><span class="line"></span></span></h1>
+  </div>
+  <div class="header-social">
+    {% include "partials/_social.html" %}
+  </div>
+  <div class="scroll-down"></div>
+</header>
+<main>
+  <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper">
+        <div class="default-content-left">
+          <h2>Ремонтные и отделочные работы</h2>
+          <p class="default-text">Выполняем ремонт «под ключ» жилой и коммерческой недвижимости: квартиры, коттеджи, офисы, рестораны и других объектов. <br><br>Создаём дизайн-проекты и осуществляем подбор материалов. Имеем необходимый опыт и высококвалифицированных специалистов.</p>
+          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о ремонте помещений</span></a>
+        </div>
+        <div class="default-content-right">
+          <img src="img/main/remont.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper reverse">
+        <div class="default-content-left">
+          <h2>Создание интерьеров</h2>
+          <p class="default-text">Создаём дизайн-проекты «под ключ»: от планирования и визуализации будущего помещения до выбора материалов. Помогаем выбрать необходимый стиль для вашего жилья или коммерческой недвижимости.</p>
+          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о интерьерах</span></a>
+        </div>
+        <div class="default-content-right">
+          <img src="img/main/interiors.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper">
+        <div class="default-content-left">
+          <h2>Утепление и реставрация<br>фасадов</h2>
+          <p class="default-text">Утепляем фасады частных домов, квартир и коммерческой недвижимости. Благодаря энергоэффективности, вы будете меньше тратить на оплату отопления и комфортно чувствовать себя в собственном жилье в любое время года. <br><br>Создаем дизайн фасада и воплощаем его в реальность используя материалы ТМ Greinplast. Предоставляем гарантию на работу и материалы</p>
+          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше об утеплении фасадов</span></a>
+        </div>
+        <div class="default-content-right">
+          <img src="img/main/restavration.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container section-container last">
+      <div class="default-content-wrapper reverse">
+        <div class="default-content-left">
+          <h2>Продукция Greinplast</h2>
+          <p class="default-text">Мы — эксклюзивный импортер строительных и отделочных материалов для фасадов, а также интерьеров польского производителя ТМ Greinplast.</p>
+          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о продукции</span></a>
+        </div>
+        <div class="default-content-right">
+          <img src="img/main/product.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section with-bg" style="background-image: url(img/main/about.jpg);">
+    <div class="container">
+      <div class="with-bg-block">
+        <h2>О компании</h2>
+        <p>Мы — польская группа компаний, производим, продаём и используем собственные строительные материалы для внутренней и внешней отделки в течение 20 лет в Европе и Украине.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container section-container last">
+      <h2>Почему стоит заказать<br> эти услуги у нас?</h2>
+      <div class="icons-items">
+        <div class="icon-item">
+          {% include "partials/_materials-icon.html" %}
+          <div class="icon-item-text">
+            <h3>Работаем с качественными материалами Greinplast</h3>
+            <p class="default-text">Знаем, как сочетать между собой материалы, работать с ними и какие инструменты для этого нужны. Каждый наш специалист имеет сертификат, подтверждающий его теоретические знания и практические навыки.</p>
+          </div>
+        </div>
+        <div class="icon-item">
+          {% include "partials/_garanties.html" %}
+          <div class="icon-item-text">
+            <h3>Гарантия на работу и материалы 7 лет</h3>
+            <p class="default-text">Мы уверены в качестве своих товаров, поэтому даем гарантию 7 лет на материалы и работу. Если у вас возникнут вопросы относительно качества выполненных работ — вы можете получить бесплатную компенсацию, если ошибка возникла по нашей вине.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <h2>Приходите в наш офис на бесплатную консультацию!</h2>
+        <p class="default-text white">Вместе с вами рассчитаем стоимость утепления фасада, согласуем план работ по ремонту вашего помещения или проконсультируем по использованию любого строительного материала ТМ Greinplast.</p>
+        <button class="button border-button footer-button"><span class="bg">{% include "partials/_blot.html" %}</span></span><span class="text">Записаться</span></button>
+      </div>
+      <div class="footer-top-right">
+      	<div class="footer-contant-wrapper">
+      	<h3>E-mail</h3>
+      	<span><a href="mailto:office@greinplast.ua">office@greinplast.ua</a></span>
+      	</div>
+      	<div class="footer-contant-wrapper">
+      		<h3>Телефон</h3>
+      	<span><a href="tel:+380677611363">+38 (067) 761 1363</a></span>
+      </div>
+      <div class="footer-contant-wrapper">
+      	<h3>Офис</h3>
+      	<span><a href="#">Украина, Киев<br>ул. Парково-Сырецкая, 4В</a></span>
+      </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+      	<h3>Представительства:</h3>
+      	<button class="underline-button">Показать больше</button>
+      </div>
+      <div class="footer-bottom-right">
+      	<div class="representations">
+      		<p>Киев, ул. Парково-Сырецкая. 4В<br>(044) 334-45-26; (067) 761-13-63</p>
+      		<p>Тернополь. ул. Степана Будного <br>(067) 351-02-20;  (097) 907-49-66 <br>vorobchuk_84@ukr.net</p>
+      		<p>Ровенская обл., Ровенский р-н, с. Б. Омеляна, ул. Авиаторов, 1 <br>(098) 514-58-74 <br>grigoukr82@gmail.com</p>
+      	</div>
+      </div>
+    </div>
+  </div>
+  {% include "partials/_e.html" %}
+</footer>
+{% endblock %}

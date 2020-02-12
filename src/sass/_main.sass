@@ -1,0 +1,89 @@
+body
+	+main
+	font-size: 18px
+	color: #292B33
+
+img
+	display: block
+	max-width: 100%
+
+
+.main-header
+	height: 100vh
+	width: 100%
+	position: relative
+	color: white
+
+.header-bg
+	width: 100%
+	height: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	position: absolute
+	top: 0
+	left: 0
+	transition: opacity .5s ease-in-out
+
+.main-descriptor
+	font-size: 20px
+	color: $accent-color
+	margin-bottom: 10px
+
+.header-social
+	position: absolute
+	bottom: 3%
+	left: 95px
+
+.social
+	display: flex
+	justify-content: center
+	align-items: flex-end
+	margin-left: -10px
+	a
+		margin-right: 20px
+		padding: 10px
+		&:hover
+			svg
+				fill: $accent-color
+	svg
+		transition: fill .4s ease
+
+
+.main-h1
+	width: 50vw
+	transition: color .4s ease-in-out
+	.h1-links
+		width: 100%
+		position: relative
+		.line
+			content: ''
+			width: 100%
+			height: 3px
+			display: block
+			background: white
+			position: absolute
+			bottom: 15px
+			transition: background .4s ease-in-out, opacity .4s ease-in-out
+		&:hover
+			transition: color .4s ease-in-out
+			.line
+				background: $accent-color
+
+
+.icons-items
+	display: flex
+	justify-content: space-between
+	width: 100%
+	margin-top: 60px
+	.icon-item
+		width: 41%
+		display: flex
+		svg
+			width: 6%
+			height: 40px
+			display: block
+			margin-right: 30px
+		p
+			margin-top: 25px
+		.icon-item-text
+			width: 94%
