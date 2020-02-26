@@ -1,0 +1,153 @@
+---
+title: Apartment-renovation page
+route: services
+footerHeader: "Как заказать отделочные работы?"
+footerP: "Оставляйте заявку: договоримся о встрече или обратном звонке, чтобы обсудить пожелания по ремонту и отделке помещения. "
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+<div class="overlay"></div>
+<header class="main-header">
+  <div class="header-bg" style="background-image: url(img/apartment-renovation/bg.jpg); opacity: 1"></div>
+  <div class="container header-container">
+    <div class="services-text-container">
+      <h1 class="services-h1">Ремонт квартир и&nbsp;отделочные работы в&nbsp;Киеве</h1>
+      <span class="descriptor">Ремонт квартир под ключ — услуга нашей компании, в ходе которой мы выполняем отделочные и ремонтные работы. Работаем с жилой и коммерческой недвижимостью.</span>
+    </div>
+  </div>
+  <div class="header-social">
+    {% include "partials/_social.html" %}
+  </div>
+  <div class="scroll-down"></div>
+</header>
+<main>
+  <div class="info-block">
+    <div class="container section-container">
+      <div class="info-block-content">
+        <h2>Как мы проводим ремонтные работы?</h2>
+        <div class="info-block-content__wrapper">
+          <div class="info-block-content--left">
+            <h3>Первый этап (черновые работы):</h3>
+            <p><span class="romb">♦</span>демонтажные работы;</p>
+            <p><span class="romb">♦</span>монтаж стен и перегородок;</p>
+            <p><span class="romb">♦</span>монтаж электропроводки;</p>
+            <p><span class="romb">♦</span>монтаж сантехнических сетей;</p>
+            <p><span class="romb">♦</span>монтаж системы вентиляции;</p>
+            <p><span class="romb">♦</span>штукатурные и малярные работы;</p>
+            <p><span class="romb">♦</span>стяжка пола;</p>
+            <p><span class="romb">♦</span>транспортные и погрузо-разгрузочные работы.</p>
+          </div>
+          <div class="info-block-content--right">
+            <h3>Второй этап (чистовые работы):</h3>
+            <p><span class="romb">♦</span>финишная отделка потолка и стен;</p>
+            <p><span class="romb">♦</span>монтируем чистовой материал пола (керамическая плитка, паркет, ламинат...);</p>
+            <p><span class="romb">♦</span>монтаж электрического оборудования;</p>
+            <p><span class="romb">♦</span>монтаж сантехнического оборудования.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper">
+        <div class="default-content-left">
+          <h2>Отделочные работы в Киеве</h2>
+          <p class="default-text">У нас можно заказать комплексный ремонт офиса, ресторана, дачного дома или отеля: от электрики и сантехники, до вентиляции и финишной отделки. Ремонт под ключ — ещё один способ сэкономить ваше время и нервы. В процессе берем на себя максимум обязательств по организации и проведению работ: выполним ремонт в сроки, практически не отвлекая заказчика. </p>
+        </div>
+        <div class="default-content-right">
+          <img src="img/apartment-renovation/decoration.jpg" alt="decoration">
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper reverse">
+        <div class="default-content-left">
+          <h2>Как заказать ремонтные работы?</h2>
+          <p class="default-text">Для этого нужно определиться с дизайном интерьера. В идеале — иметь на руках дизайн-проект помещения с утверждёнными материалами, в таком случае ремонт можно сделать за 2-3 месяца. Финальный срок зависит от объёма работ.</p>
+          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Заказать просчёт</span></a>
+        </div>
+        <div class="default-content-right">
+          <img src="img/apartment-renovation/repairs-offer.jpg" alt="repairs-offer">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section big-section">
+    <div class="container section-container last">
+      <div class="big-section-wrapper">
+        <div class="big-section-wrapper--left">
+          <img src="img/services-big-img.jpg" alt="services-big-img">
+        </div>
+        <div class="big-section-wrapper--right">
+          <div class="default-content-left">
+            <h2>Мастера для разных видов работ</h2>
+            <p class="default-text">Компания Greinplast имеет 15-ти летний опыт работы. Мы занимаемся внутренней отделкой помещений, в частности всеми видами ремонтно-отделочных работ включая инженерные сети и коммуникации. <br><br> Предоставляем огромный спектр услуг от создания проекта до его реализации. Наши специалисты проходят обучение в Польше. Мастера знают, как правильно работать с продукцией и ответственно подходят к выполнению работ.</p>
+          </div>
+          <div class="default-content-left">
+            <h2>Работаем со своими материалами</h2>
+            <p class="default-text">Для отделочных работ используем собственную продукцию ТМ Greinplast. Мы не копируем продукцию других производителей, а создаём её.</p>
+          </div>
+          <div class="default-content-left">
+            <h2>Гарантия на ремонтные работы</h2>
+            <p class="default-text">Предоставляем гарантию 5 лет. Если по вине наших мастеров что-то случится — рассмотрим ситуацию, а затем исправим технические ошибки. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section with-bg services-with-bg" style="background-image: url(img/interior-design/price-bg.jpg);">
+    <div class="container">
+      <div class="with-bg-block with-bg-block-services">
+        <h2>Цены на ремонтные и отделочные работы</h2>
+        <h3>Стоимость начинается от <span class="green">1 500 гривен за м2.</span> Конечная сумма зависит от количества видов работ и выбранных материалов. </h3>
+      </div>
+    </div>
+  </section>
+</main>
+{% include "partials/_footer.html" %}
+<div class="pop-up-form">
+  <div class="pop-up-form-scroll">
+    <div class="close-form-icon"><svg style="display: block;" width="25" height="25" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.29289" y1="14.0907" x2="14.0208" y2="1.36282" stroke="white" stroke-width="2" />
+        <line x1="1.70711" y1="1.29289" x2="14.435" y2="14.0208" stroke="white" stroke-width="2" />
+      </svg>
+    </div>
+    <h2 class="form-h2">Пожалуйста, оставьте вашу заявку в форме ниже</h2>
+    <div class="form-wrapper">
+      <form class="form" name="form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="greinplast site">
+        <input type="hidden" name="admin_email" value="hello@emotion-agency.com">
+        <input type="hidden" name="form_subject" value="Заявка с главной greinplast">
+        <!-- END Hidden Required Fields -->
+        <div class="input-wrapper first">
+          <input type="text" class="text-field" maxlength="256" name="Имя" id="name" autocomplete="off">
+          <label for="name" class="label">
+            <span class="label-content">Имя</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="text" class="text-field" maxlength="256" name="E-mail" id="email" autocomplete="off">
+          <label for="email" class="label">
+            <span class="label-content">E-mail</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" class="text-field" maxlength="256" name="Телефон" id="phone" autocomplete="off">
+          <label for="phone" class="label">
+            <span class="label-content">Номер телефона</span>
+          </label>
+          <span class="form-validate-text">поле не может быть пустым</span>
+        </div>
+        <div class="form-wrap">
+          <div class="private-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</div>
+          <button class="button border-button form-btn"><span class="bg">{% include "partials/_blot.html" %}</span></span><input type="submit" value="Оставить заявку" class="text form-button"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

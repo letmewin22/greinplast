@@ -1,6 +1,6 @@
 import FormInputs from './FormInputs.js'
-import serialize from '../lib/formSend.js'
-import pseudoPrototype from '../lib/pseudo.prototype.js'
+import serialize from './formSend.js'
+import pseudoPrototype from './pseudo.prototype.js'
 
 export default class FormSubmit extends FormInputs {
 
@@ -16,12 +16,13 @@ export default class FormSubmit extends FormInputs {
     let that = this
 
     setTimeout(() => {
-      let tl = new TimelineMax()
-      tl
-        .to(that.thankYouScreen, 0.01, { display: 'flex', ease: Power1.easeInOut })
-        .to(that.thankYouScreenBg2, 1, { opacity: 0.8, ease: Power1.easeInOut })
-        .fromTo(that.thankYouScreenBg, 1.5, { y: '100%' }, { y: '0%', ease: Power1.easeInOut }, 0.2)
-        .to(that.thankYouScreenContent, 1, { opacity: 1, ease: Power1.easeInOut }, 0.8)
+      // let tl = new TimelineMax()
+      // tl
+      //   .to(that.thankYouScreen, 0.01, { display: 'flex', ease: Power1.easeInOut })
+      //   .to(that.thankYouScreenBg2, 1, { opacity: 0.8, ease: Power1.easeInOut })
+      //   .fromTo(that.thankYouScreenBg, 1.5, { y: '100%' }, { y: '0%', ease: Power1.easeInOut }, 0.2)
+      //   .to(that.thankYouScreenContent, 1, { opacity: 1, ease: Power1.easeInOut }, 0.8)
+      alert('Форма отправлена')
 
       that.form.reset()
       // dataLayer.push({ 'event': 'otpravka_form' })
@@ -41,7 +42,6 @@ export default class FormSubmit extends FormInputs {
   validation() {
 
     let that = this
-    that.validateText.innerHTML = 'поле не може бути порожнім'
     that.validateText.style.opacity = '1'
     that.phone.focus()
     that.thislabel.pseudoStyle('after', 'border-color', '#F44336!important')

@@ -53,10 +53,14 @@ button
 	.text
 		position: relative
 		z-index: 2
+		line-height: 1em
+		+main
 
 .underline-button
 	transition: color .4s ease-in-out
 	overflow: hidden
+	width: fit-content
+	white-space: nowrap 
 	&::after
 		content: ''
 		display: flex
@@ -68,6 +72,9 @@ button
 		transition: background .5s ease-in-out
 		&.opacity
 			opacity: 0.3
+	&.black
+		&::after
+			background: black
 	&:hover
 		color: $accent-color
 		&::after

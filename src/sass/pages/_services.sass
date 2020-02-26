@@ -1,0 +1,67 @@
+.services-text-container
+	max-width: 826px
+	.descriptor
+		display: inline-block
+		width: 90%
+		line-height: 1.7em
+		margin-top: 30px
+		opacity: 0
+		transform: translateX(-40px)
+	h1
+		opacity: 0
+		transform: translateX(-40px)
+
+.info-block-content
+	width: 100%
+	background: $main-color
+	color: white
+	padding: 8.4vh 6.6vw
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		margin-top: calc(7vh - 10px)
+		p
+			margin-top: 10px
+			.romb
+				display: inline-block
+				margin-right: 10px
+				color: $accent-color
+				transform: translateY(-1.5px)
+		h3
+			margin-bottom: 20px
+	&--right
+		margin-left: 40px
+
+.big-section
+	margin-top: 140px
+	&::before
+		content: ''
+		width: 100%
+		height: 1px
+		background: rgba(0, 0, 0, 0.3)
+		display: block
+		margin-left: 10.4vw
+
+.big-section-wrapper
+	display: flex
+	justify-content: space-between
+	width: 100%
+	align-items: center
+	&--left
+		width: 47%
+		img
+			max-width: 100%
+			height: 100%
+			object-fit: cover
+	&--right
+		width: 50%
+		margin-left: 7.8vw
+		.default-content-left
+			margin-top: 100px
+			p 
+				margin-top: 35px
+			&:nth-child(1)
+				margin-top: 0px
+
+.services-with-bg
+	margin-bottom: 140px

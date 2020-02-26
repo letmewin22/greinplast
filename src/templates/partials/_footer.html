@@ -1,0 +1,48 @@
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <h2>
+          {% if footerHeader %}{{ footerHeader }}{% else %}Приходите в наш офис на бесплатную консультацию!{% endif %}
+        </h2>
+        <p class="default-text white">{{ footerP }}</p>
+        <button class="button border-button footer-button form-handler"><span class="bg">{% include "partials/_blot.html" %}</span></span><span class="text">Записаться</span></button>
+      </div>
+      <div class="footer-top-right">
+        <div class="footer-contant-wrapper">
+          <h3>E-mail</h3>
+          <span><a href="mailto:office@greinplast.ua">office@greinplast.ua</a></span>
+        </div>
+        <div class="footer-contant-wrapper">
+          <h3>Телефон</h3>
+          <span><a href="tel:+380677611363">+38 (067) 761 1363</a></span>
+        </div>
+        <div class="footer-contant-wrapper">
+          <h3>Офис</h3>
+          <span><a href="#">Украина, Киев<br>ул. Парково-Сырецкая, 4В</a></span>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <h3 data-alternate="Наши представительства">Представительства:</h3>
+        <button id="representations-btn" data-alternate-btn="Показать" class="underline-button">Показать больше</button>
+        <button style="display: none" id="representations-hidden" class="underline-button">Скрыть</button>
+      </div>
+      <div class="footer-bottom-right">
+        <div class="representations">
+          <p>Киев, ул. Парково-Сырецкая. 4В (044) 334-45-26; (067) 761-13-63</p>
+          <p>Тернополь. ул. Степана Будного (067) 351-02-20; (097) 907-49-66 vorobchuk_84@ukr.net</p>
+          <p>Ровенская обл., Ровенский р-н, с. Б. Омеляна, ул. Авиаторов, 1 (098) 514-58-74 grigoukr82@gmail.com</p>
+          <p style="display: none">Ивано-Франковск, ул. Полевая, 14 (095) 707-35-98; (098) 068-83-26 ivsmoliy@ukr.net</p>
+          <p style="display: none">Черновцы, ул. Героев Майдана, 172; ул. Строжинецкая, 192А (050) 374-57-02</p>
+          <p style="display: none">Дрогобыч, ул. И.Вильде, 8 (0324) 450-180; (067) 314-29-37 greinplastkarpaty@gmail.com </p>
+          <p style="display: none">Ужгород, ул. 8 марта, 33В (099) 26-73-601</p>
+          <p style="display: none">Луцк, ул. Конякина, 16А (050) 404-88-33; (050) 9-163-168 fasad-expo@ukr.net</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "partials/_e.html" %}
+</footer>

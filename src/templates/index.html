@@ -1,36 +1,20 @@
 ---
 title: Index page
+route: main
+footerHeader: "Приходите в наш офис на бесплатную консультацию!"
+footerP: "Вместе с вами рассчитаем стоимость утепления фасада, согласуем план работ по ремонту вашего помещения или проконсультируем по использованию любого строительного материала ТМ Greinplast."
 ---
 {% extends "layouts/_layout.html" %}
 {% block content %}
-<div class="navbar">
-  <div class="container nav-container">
-    <a href="#">
-      <img src="img/logo-min.png" alt="greinplast">
-    </a>
-    <nav>
-      <ul>
-        <li>фасады</li>
-        <li>интерьеры</li>
-        <li><a href="#">продукция</a></li>
-        <li>компания</li>
-        <li><a href="#">блог</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-    </nav>
-    <button class="button border-button nav-button">
-      <span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Связаться с нами</span>
-    </button>
-  </div>
-</div>
+<div class="overlay"></div>
 <header class="main-header">
   <div class="header-bg" style="background-image: url(img/main/main-1.jpg); opacity: 0"></div>
   <div class="header-bg" style="background-image: url(img/main/main-2.jpg); opacity: 1"></div>
   <div class="header-bg" style="background-image: url(img/main/main-3.jpg); opacity: 0"></div>
   <div class="container header-container">
     <span class="main-descriptor">Greinplast — эстетика жизненного пространства</span>
-    <h1 class="main-h1"><span data-bg="0" class="h1-links"><a href="#">Утепляем фасады</a><span class="line"></span></span>,
-      проводим <span data-bg="1" class="h1-links"><a href="#">ремонтные работы</a><span class="line"></span></span> и
+    <h1 class="main-h1"><span data-bg="0" class="h1-links"><a href="facades-warming.html">Утепляем фасады</a><span class="line"></span></span>,
+      проводим <span data-bg="1" class="h1-links"><a href="apartment-renovation.html">ремонтные работы</a><span class="line"></span></span> и
       продаем <span data-bg="2" class="h1-links"><a href="#">отделочные материалы</a><span class="line"></span></span></h1>
   </div>
   <div class="header-social">
@@ -45,10 +29,10 @@ title: Index page
         <div class="default-content-left">
           <h2>Ремонтные и отделочные работы</h2>
           <p class="default-text">Выполняем ремонт «под ключ» жилой и коммерческой недвижимости: квартиры, коттеджи, офисы, рестораны и других объектов. <br><br>Создаём дизайн-проекты и осуществляем подбор материалов. Имеем необходимый опыт и высококвалифицированных специалистов.</p>
-          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о ремонте помещений</span></a>
+          <a class="button" href="apartment-renovation.html"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о ремонте помещений</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/remont.jpg" alt="">
+          <img src="img/main/remont.jpg" alt="remont">
         </div>
       </div>
     </div>
@@ -59,10 +43,10 @@ title: Index page
         <div class="default-content-left">
           <h2>Создание интерьеров</h2>
           <p class="default-text">Создаём дизайн-проекты «под ключ»: от планирования и визуализации будущего помещения до выбора материалов. Помогаем выбрать необходимый стиль для вашего жилья или коммерческой недвижимости.</p>
-          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о интерьерах</span></a>
+          <a class="button" href="interior-design.html"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о интерьерах</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/interiors.jpg" alt="">
+          <img src="img/main/interiors.jpg" alt="interiors">
         </div>
       </div>
     </div>
@@ -73,10 +57,10 @@ title: Index page
         <div class="default-content-left">
           <h2>Утепление и реставрация<br>фасадов</h2>
           <p class="default-text">Утепляем фасады частных домов, квартир и коммерческой недвижимости. Благодаря энергоэффективности, вы будете меньше тратить на оплату отопления и комфортно чувствовать себя в собственном жилье в любое время года. <br><br>Создаем дизайн фасада и воплощаем его в реальность используя материалы ТМ Greinplast. Предоставляем гарантию на работу и материалы</p>
-          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше об утеплении фасадов</span></a>
+          <a class="button" href="facades-warming.html"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше об утеплении фасадов</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/restavration.jpg" alt="">
+          <img src="img/main/restavration.jpg" alt="restavration">
         </div>
       </div>
     </div>
@@ -90,7 +74,7 @@ title: Index page
           <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Больше о продукции</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/product.jpg" alt="">
+          <img src="img/main/product.jpg" alt="product">
         </div>
       </div>
     </div>
@@ -125,44 +109,47 @@ title: Index page
     </div>
   </section>
 </main>
-<footer class="main-footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-top-left">
-        <h2>Приходите в наш офис на бесплатную консультацию!</h2>
-        <p class="default-text white">Вместе с вами рассчитаем стоимость утепления фасада, согласуем план работ по ремонту вашего помещения или проконсультируем по использованию любого строительного материала ТМ Greinplast.</p>
-        <button class="button border-button footer-button"><span class="bg">{% include "partials/_blot.html" %}</span></span><span class="text">Записаться</span></button>
-      </div>
-      <div class="footer-top-right">
-      	<div class="footer-contant-wrapper">
-      	<h3>E-mail</h3>
-      	<span><a href="mailto:office@greinplast.ua">office@greinplast.ua</a></span>
-      	</div>
-      	<div class="footer-contant-wrapper">
-      		<h3>Телефон</h3>
-      	<span><a href="tel:+380677611363">+38 (067) 761 1363</a></span>
-      </div>
-      <div class="footer-contant-wrapper">
-      	<h3>Офис</h3>
-      	<span><a href="#">Украина, Киев<br>ул. Парково-Сырецкая, 4В</a></span>
-      </div>
-      </div>
+{% include "partials/_footer.html" %}
+<div class="pop-up-form">
+  <div class="pop-up-form-scroll">
+    <div class="close-form-icon"><svg style="display: block;" width="25" height="25" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.29289" y1="14.0907" x2="14.0208" y2="1.36282" stroke="white" stroke-width="2" />
+        <line x1="1.70711" y1="1.29289" x2="14.435" y2="14.0208" stroke="white" stroke-width="2" />
+      </svg>
     </div>
-    <hr>
-    <div class="footer-bottom">
-      <div class="footer-bottom-left">
-      	<h3>Представительства:</h3>
-      	<button class="underline-button">Показать больше</button>
-      </div>
-      <div class="footer-bottom-right">
-      	<div class="representations">
-      		<p>Киев, ул. Парково-Сырецкая. 4В<br>(044) 334-45-26; (067) 761-13-63</p>
-      		<p>Тернополь. ул. Степана Будного <br>(067) 351-02-20;  (097) 907-49-66 <br>vorobchuk_84@ukr.net</p>
-      		<p>Ровенская обл., Ровенский р-н, с. Б. Омеляна, ул. Авиаторов, 1 <br>(098) 514-58-74 <br>grigoukr82@gmail.com</p>
-      	</div>
-      </div>
+    <h2 class="form-h2">Пожалуйста, оставьте вашу заявку в форме ниже</h2>
+    <div class="form-wrapper">
+      <form class="form" name="form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="greinplast site">
+        <input type="hidden" name="admin_email" value="hello@emotion-agency.com">
+        <input type="hidden" name="form_subject" value="Заявка с главной greinplast">
+        <!-- END Hidden Required Fields -->
+        <div class="input-wrapper first">
+          <input type="text" class="text-field" maxlength="256" name="Имя" id="name" autocomplete="off">
+          <label for="name" class="label">
+            <span class="label-content">Имя</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="text" class="text-field" maxlength="256" name="E-mail" id="email" autocomplete="off">
+          <label for="email" class="label">
+            <span class="label-content">E-mail</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" class="text-field" maxlength="256" name="Телефон" id="phone" autocomplete="off">
+          <label for="phone" class="label">
+            <span class="label-content">Номер телефона</span>
+          </label>
+          <span class="form-validate-text">поле не может быть пустым</span>
+        </div>
+        <div class="form-wrap">
+          <div class="private-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</div>
+          <button class="button border-button form-btn"><span class="bg">{% include "partials/_blot.html" %}</span></span><input type="submit" value="Оставить заявку" class="text form-button"></button>
+        </div>
+      </form>
     </div>
   </div>
-  {% include "partials/_e.html" %}
-</footer>
+</div>
 {% endblock %}

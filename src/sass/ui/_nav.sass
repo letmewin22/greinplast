@@ -1,13 +1,20 @@
 .navbar
 	width: 100%
 	position: absolute
-	top: 3.7%
+	top: 3.7vh
 	z-index: 10
 	color: white
+	// transform: translateY(-100%)
+	// opacity: 0
+	transition: transform 1s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 1s cubic-bezier(0.39, 0.575, 0.565, 1)
 	.nav-container
 		display: flex
 		justify-content: space-between
 		align-items: center
+	&.loaded
+		transform: translateY(0px)
+		opacity: 1
+
 
 	nav
 		width: 50%
@@ -18,5 +25,41 @@
 			li
 				cursor: pointer
 				transition: color .4s ease
-				&:hover
-					color: $accent-color
+				a
+					transition: color .4s ease
+					&:hover
+						color: $accent-color
+
+.burger
+	display: none
+
+.logo-img
+	&.mob
+		display: none
+
+// .with-drpdn
+// 	&:hover
+// 		color: $accent-color
+// 		.dropdown-content
+// 			opacity: 1
+// 			pointer-events: auto
+			
+
+.dropdown-content
+	position: absolute
+	padding: 25px 18px
+	background: #292B33
+	color: white
+	display: none
+	// margin-top: 14px
+	opacity: 0
+	pointer-events: none
+	transition: opacity .5s ease
+	a
+		display: block
+		margin-top: 25px
+		&:nth-child(1)
+			margin-top: 0px
+
+.nav-mobile-header
+	display: none

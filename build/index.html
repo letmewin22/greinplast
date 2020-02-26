@@ -15,40 +15,92 @@
 </head>
 
 
-  <body>
 
-    <!-- BEGIN content -->
-      
-<div class="navbar">
+<body>
+  <div class="loader-screen">
+    <div class="loader"></div>
+  </div>
+  <div class="navbar">
   <div class="container nav-container">
-    <a href="#">
-      <img src="img/logo-min.png" alt="greinplast">
+    <a href="/">
+      <img class="logo-img desk" src="img/logo-min.png" alt="greinplast">
+      <img class="logo-img mob" src="img/logo-mob.png" alt="greinplast">
     </a>
     <nav>
-      <ul>
-        <li>фасады</li>
-        <li>интерьеры</li>
-        <li><a href="#">продукция</a></li>
-        <li>компания</li>
-        <li><a href="#">блог</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
+      <div class="nav-scroll">
+        <div class="nav-mobile-header">
+          <a href="/">
+            <img class="logo-img-mob" src="img/logo-mob-black.png" alt="greinplast">
+          </a>
+          <div class="nav-mobile-right-content">
+            <button class="underline-button black mob-header-btn form-handler">Связаться с нами</button>
+            <div class="close-icon"><svg style="display: block;" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.29289" y1="14.0907" x2="14.0208" y2="1.36282" stroke="#292B33" stroke-width="2" />
+                <line x1="1.70711" y1="1.29289" x2="14.435" y2="14.0208" stroke="#292B33" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li class="with-drpdn">
+            <div class="dropbtn">фасады
+              <span class="only-mob">&#9662;</span>
+            </div>
+            <div class="dropdown-content">
+              <a href="facades-design.html">дизайн фасадов</a>
+              <a href="facades-warming.html">утепление фасадов</a>
+            </div>
+          </li>
+          <li class="with-drpdn">
+            <div class="dropbtn">интерьеры
+              <span class="only-mob">&#9662;</span>
+            </div>
+            <div class="dropdown-content">
+              <a href="interior-design.html">дизайн интерьеров</a>
+              <a href="apartment-renovation.html">ремонт квартир</a>
+            </div>
+          </li>
+          <li><a href="#">продукция</a></li>
+          <li class="with-drpdn">
+            <div class="dropbtn">компания
+              <span class="only-mob">&#9662;</span>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">о нас</a>
+              <a href="#">партнёрам</a>
+            </div>
+          </li>
+          <li><a href="#">блог</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+      </div>
     </nav>
-    <button class="button border-button nav-button">
+    <button class="button border-button nav-button form-handler">
       <span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M110.233 12.5773C122.35 1.55331 141.362 -0.706606 158.667 0.171071C213.025 2.9313 262.093 29.7662 304.534 60.1202C319.902 71.106 335.029 82.9483 345.002 98.0808C365.321 128.88 359.283 171.556 331.052 196.928C321.445 205.564 309.801 212.192 297.846 218.047C276.59 228.482 253.655 236.856 229.533 239.247C212.329 240.943 194.913 239.565 177.812 237.195C130.03 230.559 83.1265 215.906 43.8159 190.86C26.574 179.862 10.319 166.196 3.21163 148.405C-3.89578 130.614 0.653131 108.079 18.2599 97.5508C25.5415 93.1964 34.2495 91.229 42.771 89.3846C55.3188 86.6668 68.0657 83.9871 79.3903 78.4624C91.0839 72.7554 104.93 61.7145 102.612 49.0835C100.132 35.5071 98.1374 23.6012 110.233 12.5773Z"/>
 </svg></span><span class="text">Связаться с нами</span>
     </button>
+    <svg class="burger" width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line y1="1" x2="28" y2="1" stroke="white" stroke-width="2" />
+      <line y1="8" x2="28" y2="8" stroke="white" stroke-width="2" />
+      <line y1="15" x2="28" y2="15" stroke="white" stroke-width="2" />
+    </svg>
   </div>
 </div>
+
+  <div class="site-wrapper" data-router-wrapper>
+    <div data-router-view="main">
+      <!-- BEGIN content -->
+      
+<div class="overlay"></div>
 <header class="main-header">
   <div class="header-bg" style="background-image: url(img/main/main-1.jpg); opacity: 0"></div>
   <div class="header-bg" style="background-image: url(img/main/main-2.jpg); opacity: 1"></div>
   <div class="header-bg" style="background-image: url(img/main/main-3.jpg); opacity: 0"></div>
   <div class="container header-container">
     <span class="main-descriptor">Greinplast — эстетика жизненного пространства</span>
-    <h1 class="main-h1"><span data-bg="0" class="h1-links"><a href="#">Утепляем фасады</a><span class="line"></span></span>,
-      проводим <span data-bg="1" class="h1-links"><a href="#">ремонтные работы</a><span class="line"></span></span> и
+    <h1 class="main-h1"><span data-bg="0" class="h1-links"><a href="facades-warming.html">Утепляем фасады</a><span class="line"></span></span>,
+      проводим <span data-bg="1" class="h1-links"><a href="apartment-renovation.html">ремонтные работы</a><span class="line"></span></span> и
       продаем <span data-bg="2" class="h1-links"><a href="#">отделочные материалы</a><span class="line"></span></span></h1>
   </div>
   <div class="header-social">
@@ -77,12 +129,12 @@
         <div class="default-content-left">
           <h2>Ремонтные и отделочные работы</h2>
           <p class="default-text">Выполняем ремонт «под ключ» жилой и коммерческой недвижимости: квартиры, коттеджи, офисы, рестораны и других объектов. <br><br>Создаём дизайн-проекты и осуществляем подбор материалов. Имеем необходимый опыт и высококвалифицированных специалистов.</p>
-          <a class="button" href="#"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="button" href="apartment-renovation.html"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M110.233 12.5773C122.35 1.55331 141.362 -0.706606 158.667 0.171071C213.025 2.9313 262.093 29.7662 304.534 60.1202C319.902 71.106 335.029 82.9483 345.002 98.0808C365.321 128.88 359.283 171.556 331.052 196.928C321.445 205.564 309.801 212.192 297.846 218.047C276.59 228.482 253.655 236.856 229.533 239.247C212.329 240.943 194.913 239.565 177.812 237.195C130.03 230.559 83.1265 215.906 43.8159 190.86C26.574 179.862 10.319 166.196 3.21163 148.405C-3.89578 130.614 0.653131 108.079 18.2599 97.5508C25.5415 93.1964 34.2495 91.229 42.771 89.3846C55.3188 86.6668 68.0657 83.9871 79.3903 78.4624C91.0839 72.7554 104.93 61.7145 102.612 49.0835C100.132 35.5071 98.1374 23.6012 110.233 12.5773Z"/>
 </svg></span><span class="text">Больше о ремонте помещений</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/remont.jpg" alt="">
+          <img src="img/main/remont.jpg" alt="remont">
         </div>
       </div>
     </div>
@@ -93,12 +145,12 @@
         <div class="default-content-left">
           <h2>Создание интерьеров</h2>
           <p class="default-text">Создаём дизайн-проекты «под ключ»: от планирования и визуализации будущего помещения до выбора материалов. Помогаем выбрать необходимый стиль для вашего жилья или коммерческой недвижимости.</p>
-          <a class="button" href="#"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="button" href="interior-design.html"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M110.233 12.5773C122.35 1.55331 141.362 -0.706606 158.667 0.171071C213.025 2.9313 262.093 29.7662 304.534 60.1202C319.902 71.106 335.029 82.9483 345.002 98.0808C365.321 128.88 359.283 171.556 331.052 196.928C321.445 205.564 309.801 212.192 297.846 218.047C276.59 228.482 253.655 236.856 229.533 239.247C212.329 240.943 194.913 239.565 177.812 237.195C130.03 230.559 83.1265 215.906 43.8159 190.86C26.574 179.862 10.319 166.196 3.21163 148.405C-3.89578 130.614 0.653131 108.079 18.2599 97.5508C25.5415 93.1964 34.2495 91.229 42.771 89.3846C55.3188 86.6668 68.0657 83.9871 79.3903 78.4624C91.0839 72.7554 104.93 61.7145 102.612 49.0835C100.132 35.5071 98.1374 23.6012 110.233 12.5773Z"/>
 </svg></span><span class="text">Больше о интерьерах</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/interiors.jpg" alt="">
+          <img src="img/main/interiors.jpg" alt="interiors">
         </div>
       </div>
     </div>
@@ -109,12 +161,12 @@
         <div class="default-content-left">
           <h2>Утепление и реставрация<br>фасадов</h2>
           <p class="default-text">Утепляем фасады частных домов, квартир и коммерческой недвижимости. Благодаря энергоэффективности, вы будете меньше тратить на оплату отопления и комфортно чувствовать себя в собственном жилье в любое время года. <br><br>Создаем дизайн фасада и воплощаем его в реальность используя материалы ТМ Greinplast. Предоставляем гарантию на работу и материалы</p>
-          <a class="button" href="#"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="button" href="facades-warming.html"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M110.233 12.5773C122.35 1.55331 141.362 -0.706606 158.667 0.171071C213.025 2.9313 262.093 29.7662 304.534 60.1202C319.902 71.106 335.029 82.9483 345.002 98.0808C365.321 128.88 359.283 171.556 331.052 196.928C321.445 205.564 309.801 212.192 297.846 218.047C276.59 228.482 253.655 236.856 229.533 239.247C212.329 240.943 194.913 239.565 177.812 237.195C130.03 230.559 83.1265 215.906 43.8159 190.86C26.574 179.862 10.319 166.196 3.21163 148.405C-3.89578 130.614 0.653131 108.079 18.2599 97.5508C25.5415 93.1964 34.2495 91.229 42.771 89.3846C55.3188 86.6668 68.0657 83.9871 79.3903 78.4624C91.0839 72.7554 104.93 61.7145 102.612 49.0835C100.132 35.5071 98.1374 23.6012 110.233 12.5773Z"/>
 </svg></span><span class="text">Больше об утеплении фасадов</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/restavration.jpg" alt="">
+          <img src="img/main/restavration.jpg" alt="restavration">
         </div>
       </div>
     </div>
@@ -130,7 +182,7 @@
 </svg></span><span class="text">Больше о продукции</span></a>
         </div>
         <div class="default-content-right">
-          <img src="img/main/product.jpg" alt="">
+          <img src="img/main/product.jpg" alt="product">
         </div>
       </div>
     </div>
@@ -187,39 +239,47 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-top-left">
-        <h2>Приходите в наш офис на бесплатную консультацию!</h2>
+        <h2>
+          Приходите в наш офис на бесплатную консультацию!
+        </h2>
         <p class="default-text white">Вместе с вами рассчитаем стоимость утепления фасада, согласуем план работ по ремонту вашего помещения или проконсультируем по использованию любого строительного материала ТМ Greinplast.</p>
-        <button class="button border-button footer-button"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="button border-button footer-button form-handler"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M110.233 12.5773C122.35 1.55331 141.362 -0.706606 158.667 0.171071C213.025 2.9313 262.093 29.7662 304.534 60.1202C319.902 71.106 335.029 82.9483 345.002 98.0808C365.321 128.88 359.283 171.556 331.052 196.928C321.445 205.564 309.801 212.192 297.846 218.047C276.59 228.482 253.655 236.856 229.533 239.247C212.329 240.943 194.913 239.565 177.812 237.195C130.03 230.559 83.1265 215.906 43.8159 190.86C26.574 179.862 10.319 166.196 3.21163 148.405C-3.89578 130.614 0.653131 108.079 18.2599 97.5508C25.5415 93.1964 34.2495 91.229 42.771 89.3846C55.3188 86.6668 68.0657 83.9871 79.3903 78.4624C91.0839 72.7554 104.93 61.7145 102.612 49.0835C100.132 35.5071 98.1374 23.6012 110.233 12.5773Z"/>
 </svg></span></span><span class="text">Записаться</span></button>
       </div>
       <div class="footer-top-right">
-      	<div class="footer-contant-wrapper">
-      	<h3>E-mail</h3>
-      	<span><a href="mailto:office@greinplast.ua">office@greinplast.ua</a></span>
-      	</div>
-      	<div class="footer-contant-wrapper">
-      		<h3>Телефон</h3>
-      	<span><a href="tel:+380677611363">+38 (067) 761 1363</a></span>
-      </div>
-      <div class="footer-contant-wrapper">
-      	<h3>Офис</h3>
-      	<span><a href="#">Украина, Киев<br>ул. Парково-Сырецкая, 4В</a></span>
-      </div>
+        <div class="footer-contant-wrapper">
+          <h3>E-mail</h3>
+          <span><a href="mailto:office@greinplast.ua">office@greinplast.ua</a></span>
+        </div>
+        <div class="footer-contant-wrapper">
+          <h3>Телефон</h3>
+          <span><a href="tel:+380677611363">+38 (067) 761 1363</a></span>
+        </div>
+        <div class="footer-contant-wrapper">
+          <h3>Офис</h3>
+          <span><a href="#">Украина, Киев<br>ул. Парково-Сырецкая, 4В</a></span>
+        </div>
       </div>
     </div>
     <hr>
     <div class="footer-bottom">
       <div class="footer-bottom-left">
-      	<h3>Представительства:</h3>
-      	<button class="underline-button">Показать больше</button>
+        <h3 data-alternate="Наши представительства">Представительства:</h3>
+        <button id="representations-btn" data-alternate-btn="Показать" class="underline-button">Показать больше</button>
+        <button style="display: none" id="representations-hidden" class="underline-button">Скрыть</button>
       </div>
       <div class="footer-bottom-right">
-      	<div class="representations">
-      		<p>Киев, ул. Парково-Сырецкая. 4В<br>(044) 334-45-26; (067) 761-13-63</p>
-      		<p>Тернополь. ул. Степана Будного <br>(067) 351-02-20;  (097) 907-49-66 <br>vorobchuk_84@ukr.net</p>
-      		<p>Ровенская обл., Ровенский р-н, с. Б. Омеляна, ул. Авиаторов, 1 <br>(098) 514-58-74 <br>grigoukr82@gmail.com</p>
-      	</div>
+        <div class="representations">
+          <p>Киев, ул. Парково-Сырецкая. 4В (044) 334-45-26; (067) 761-13-63</p>
+          <p>Тернополь. ул. Степана Будного (067) 351-02-20; (097) 907-49-66 vorobchuk_84@ukr.net</p>
+          <p>Ровенская обл., Ровенский р-н, с. Б. Омеляна, ул. Авиаторов, 1 (098) 514-58-74 grigoukr82@gmail.com</p>
+          <p style="display: none">Ивано-Франковск, ул. Полевая, 14 (095) 707-35-98; (098) 068-83-26 ivsmoliy@ukr.net</p>
+          <p style="display: none">Черновцы, ул. Героев Майдана, 172; ул. Строжинецкая, 192А (050) 374-57-02</p>
+          <p style="display: none">Дрогобыч, ул. И.Вильде, 8 (0324) 450-180; (067) 314-29-37 greinplastkarpaty@gmail.com </p>
+          <p style="display: none">Ужгород, ул. 8 марта, 33В (099) 26-73-601</p>
+          <p style="display: none">Луцк, ул. Конякина, 16А (050) 404-88-33; (050) 9-163-168 fasad-expo@ukr.net</p>
+        </div>
       </div>
     </div>
   </div>
@@ -232,11 +292,57 @@
 
 </footer>
 
-    <!-- END content -->
+<div class="pop-up-form">
+  <div class="pop-up-form-scroll">
+    <div class="close-form-icon"><svg style="display: block;" width="25" height="25" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.29289" y1="14.0907" x2="14.0208" y2="1.36282" stroke="white" stroke-width="2" />
+        <line x1="1.70711" y1="1.29289" x2="14.435" y2="14.0208" stroke="white" stroke-width="2" />
+      </svg>
+    </div>
+    <h2 class="form-h2">Пожалуйста, оставьте вашу заявку в форме ниже</h2>
+    <div class="form-wrapper">
+      <form class="form" name="form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="greinplast site">
+        <input type="hidden" name="admin_email" value="hello@emotion-agency.com">
+        <input type="hidden" name="form_subject" value="Заявка с главной greinplast">
+        <!-- END Hidden Required Fields -->
+        <div class="input-wrapper first">
+          <input type="text" class="text-field" maxlength="256" name="Имя" id="name" autocomplete="off">
+          <label for="name" class="label">
+            <span class="label-content">Имя</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="text" class="text-field" maxlength="256" name="E-mail" id="email" autocomplete="off">
+          <label for="email" class="label">
+            <span class="label-content">E-mail</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" class="text-field" maxlength="256" name="Телефон" id="phone" autocomplete="off">
+          <label for="phone" class="label">
+            <span class="label-content">Номер телефона</span>
+          </label>
+          <span class="form-validate-text">поле не может быть пустым</span>
+        </div>
+        <div class="form-wrap">
+          <div class="private-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</div>
+          <button class="button border-button form-btn"><span class="bg"><svg viewBox="0 0 357 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M110.233 12.5773C122.35 1.55331 141.362 -0.706606 158.667 0.171071C213.025 2.9313 262.093 29.7662 304.534 60.1202C319.902 71.106 335.029 82.9483 345.002 98.0808C365.321 128.88 359.283 171.556 331.052 196.928C321.445 205.564 309.801 212.192 297.846 218.047C276.59 228.482 253.655 236.856 229.533 239.247C212.329 240.943 194.913 239.565 177.812 237.195C130.03 230.559 83.1265 215.906 43.8159 190.86C26.574 179.862 10.319 166.196 3.21163 148.405C-3.89578 130.614 0.653131 108.079 18.2599 97.5508C25.5415 93.1964 34.2495 91.229 42.771 89.3846C55.3188 86.6668 68.0657 83.9871 79.3903 78.4624C91.0839 72.7554 104.93 61.7145 102.612 49.0835C100.132 35.5071 98.1374 23.6012 110.233 12.5773Z"/>
+</svg></span></span><input type="submit" value="Оставить заявку" class="text form-button"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-    <!-- BEGIN scripts -->
-    <script src="js/app.js"></script>
-    <!-- END scripts -->
+      <!-- END content -->
+    </div>
+  </div>
+  <!-- BEGIN scripts -->
+  <script src="js/app.js"></script>
+  <!-- END scripts -->
+</body>
 
-  </body>
 </html>

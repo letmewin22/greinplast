@@ -1,0 +1,146 @@
+---
+title: Interior-design page
+route: services
+footerHeader: "Давайте мы создадим дизайн интерьера вашей недвижимости?"
+footerP: "Оставляйте заявку: договоримся о встрече в нашем офисе в удобное для вас время. Мы покажем свои проекты, а вы расскажете о своих пожеланиях. "
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+<div class="overlay"></div>
+<header class="main-header">
+  <div class="header-bg" style="background-image: url(img/interior-design/bg.jpg); opacity: 1"></div>
+  <div class="container header-container">
+    <div class="services-text-container">
+      <h1 class="services-h1">Дизайн интерьера в&nbsp;Киеве</h1>
+      <span class="descriptor">Дизайн интерьера — услуга, в ходе которой мы создаём дизайн-проект интерьера жилой или коммерческой недвижимости различной сложности. </span>
+    </div>
+  </div>
+  <div class="header-social">
+    {% include "partials/_social.html" %}
+  </div>
+  <div class="scroll-down"></div>
+</header>
+<main>
+  <div class="info-block">
+    <div class="container section-container">
+      <div class="info-block-content">
+        <h2>Как мы работаем?</h2>
+        <div class="info-block-content__wrapper">
+          <div class="info-block-content--left">
+            <p><span class="romb">♦</span>разрабатываем план строительных работ;</p>
+            <p><span class="romb">♦</span>составляем проектную документацию;</p>
+            <p><span class="romb">♦</span>делаем расчет количества материалов;</p>
+            <p><span class="romb">♦</span>предлагаем решения по стилю оформления, типам отделочных материалов;</p>
+          </div>
+          <div class="info-block-content--right">
+            <p><span class="romb">♦</span>подбираем материалы и мебель;</p>
+            <p><span class="romb">♦</span>создаём финальные визуализации;</p>
+            <p><span class="romb">♦</span>предоставляем авторский надзор: от создания дизайн-проекта до его реализации.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper">
+        <div class="default-content-left">
+          <h2>Дизайн интерьера квартиры, частных домов, офиса</h2>
+          <p class="default-text">Мы работаем комплексно: от выбора стиля и мебели до ремонта согласно дизайн-проекта. Сначала утверждаем планировку, а затем визуализируем ваши желания.<br><br>Если вы не знаете, чего хотите — помогаем определиться со стилем, показываем примеры разных интерьеров. Мы берём себя все сложности ремонта, ведём авторский и технический надзор: от создания дизайн-проекта до его реализации.</p>
+        </div>
+        <div class="default-content-right">
+          <img src="img/interior-design/interior-design.jpg" alt="interior-design">
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper reverse">
+        <div class="default-content-left">
+          <h2>Хотите заказать дизайн интерьера?</h2>
+          <p class="default-text">Оставляйте заявку или приезжайте к нам в офис. Мы покажем примеры наших работ и обсудим ваши желания, а затем приступим к реализации. У нас в шоу-руме можно посмотреть и пощупать материалы, которые будут использоваться в вашем интерьере. </p>
+          <a class="button" href="#"><span class="bg">{% include "partials/_blot.html" %}</span><span class="text">Оставить заявку</span></a>
+        </div>
+        <div class="default-content-right">
+          <img src="img/interior-design/design-order.jpg" alt="design-order">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section big-section">
+    <div class="container section-container last">
+      <div class="big-section-wrapper">
+        <div class="big-section-wrapper--left">
+          <img src="img/services-small-img.jpg" alt="services-big-img">
+        </div>
+        <div class="big-section-wrapper--right">
+          <div class="default-content-left">
+            <h2>Подбираем материалы</h2>
+            <p class="default-text">Выбираем подходящий стиль, декор стен, материалы, помогаем определиться с цветовыми решениями, и знаем, как сделать помещения функциональнее. </p>
+          </div>
+          <div class="default-content-left">
+            <h2>Дизайн-проект в Киеве: от визуализации до готового ремонта</h2>
+            <p class="default-text">Мы не только рисуем красивые проекты, но и помогаем их реализовать. Наши мастера сделают «ремонт под ключ» в вашем помещении согласно проекта в течение 2-3 месяцев. Окончательный срок зависит от объёма работы. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section with-bg services-with-bg" style="background-image: url(img/interior-design/price-bg.jpg);">
+    <div class="container">
+      <div class="with-bg-block with-bg-block-services">
+        <h2>Цены на дизайн интерьера</h2>
+        <p>Каждый проект уникален, поэтому просчитывается отдельно. Стоимость дизайна интерьера квартиры или дома напрямую зависит от сложности выбранного стиля. Дизайн интерьеров офисных помещений и помещений общего назначения рассчитывается индивидуально. </p>
+        <h3>Цена зависит от:</h3>
+        <p><span class="romb">♦</span> площади помещения;</p>
+        <p><span class="romb">♦</span> количества визуализаций;</p>
+        <p><span class="romb">♦</span> требований по функциональности.</p>
+      </div>
+    </div>
+  </section>
+</main>
+{% include "partials/_footer.html" %}
+<div class="pop-up-form">
+  <div class="pop-up-form-scroll">
+    <div class="close-form-icon"><svg style="display: block;" width="25" height="25" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.29289" y1="14.0907" x2="14.0208" y2="1.36282" stroke="white" stroke-width="2" />
+        <line x1="1.70711" y1="1.29289" x2="14.435" y2="14.0208" stroke="white" stroke-width="2" />
+      </svg>
+    </div>
+    <h2 class="form-h2">Пожалуйста, оставьте вашу заявку в форме ниже</h2>
+    <div class="form-wrapper">
+      <form class="form" name="form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="greinplast site">
+        <input type="hidden" name="admin_email" value="hello@emotion-agency.com">
+        <input type="hidden" name="form_subject" value="Заявка с главной greinplast">
+        <!-- END Hidden Required Fields -->
+        <div class="input-wrapper first">
+          <input type="text" class="text-field" maxlength="256" name="Имя" id="name" autocomplete="off">
+          <label for="name" class="label">
+            <span class="label-content">Имя</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="text" class="text-field" maxlength="256" name="E-mail" id="email" autocomplete="off">
+          <label for="email" class="label">
+            <span class="label-content">E-mail</span>
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" class="text-field" maxlength="256" name="Телефон" id="phone" autocomplete="off">
+          <label for="phone" class="label">
+            <span class="label-content">Номер телефона</span>
+          </label>
+          <span class="form-validate-text">поле не может быть пустым</span>
+        </div>
+        <div class="form-wrap">
+          <div class="private-policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</div>
+          <button class="button border-button form-btn"><span class="bg">{% include "partials/_blot.html" %}</span></span><input type="submit" value="Оставить заявку" class="text form-button"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
