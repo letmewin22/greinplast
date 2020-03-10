@@ -1,17 +1,15 @@
 const dropLinks = document.querySelectorAll('.with-drpdn')
 
-
 function dropDownOpen() {
 
   this.style.color = '#37D078'
 
   this.querySelector('.dropdown-content').style.display = 'block'
-  
+
   setTimeout(() => {
-    this.querySelector('.dropdown-content').style.opacity = 1
-    this.querySelector('.dropdown-content').style.pointerEvents = 'auto'
+    this.querySelector('.dropdown-content').classList.add('open')
     this.querySelector('.only-mob').style.transform = 'rotate(180deg)'
-  }, 10)
+  }, 0)
 
 }
 
@@ -19,10 +17,9 @@ function dropDownLeave() {
 
   this.style.color = 'inherit'
 
-  this.querySelector('.dropdown-content').style.opacity = 0
-  this.querySelector('.dropdown-content').style.pointerEvents = 'none'
+  this.querySelector('.dropdown-content').classList.remove('open')
   this.querySelector('.only-mob').style.transform = 'rotate(0deg)'
-  
+
   setTimeout(() => {
     this.querySelector('.dropdown-content').style.display = 'none'
   }, 500)

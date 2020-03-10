@@ -15,6 +15,7 @@ function sectionInView() {
           .to(elements[i].querySelectorAll('h2'), 0.6, { opacity: 1, y: 0, ease: Power1.easeOut }, 0.3)
           .to(elements[i].querySelectorAll('h3'), 0.5, { opacity: 1, ease: Power1.easeOut }, 0.4)
           .to(elements[i].querySelectorAll('p'), 0.5, { opacity: 1, ease: Power1.easeOut }, 0.5)
+          .to(elements[i].querySelectorAll('.default-content-plus-text'), 0.5, { opacity: 1, ease: Power1.easeOut }, 0.5)
           .to(elements[i].querySelectorAll('.button'), 0.5, { opacity: 1, y: 0, ease: Power1.easeOut }, 0.8)
       }
     }

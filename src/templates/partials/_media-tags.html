@@ -11,6 +11,6 @@
     <meta name="description" content="{% if description %}{{ description }}{% else %}Template{% endif %}">
     <meta property="og:title" content="{% if title %}{{ title }}{% else %}Template{% endif %}">
     <meta property="og:description" content="{% if description %}{{ description }}{% else %}Template{% endif %}">
-    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" media="all" href="{% if blog %}../{% endif %}css/app.css">
 </head>
 

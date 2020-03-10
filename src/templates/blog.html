@@ -1,0 +1,31 @@
+---
+title: Blog
+route: blog
+---
+{% extends "layouts/_blog-layout.html" %}
+{% block content %}
+<div class="overlay"></div>
+<header class="blog-header">
+  <div class="blog-header-bg" style="background-image: url({% if blog %}../{% endif %}img/blog-header.jpg);"></div>
+  <div class="container header-container blog-header-container">
+    <h1>Новости</h1>
+  </div>
+</header>
+<main>
+  <section class="section">
+    <div class="container last">
+      <div class="blog-wrapper">
+        {% for i in range(0, 4) -%}
+        <a href="blog/grafpinopolesterol.html" class="blog-article">
+          <div class="blog-article__img" style="background-image: url(img/blog-img/1.jpg);"></div>
+          <div class="blog-article__text">
+            <h3 class="blog-article__header">Утепление фасадов</h3>
+            <p class="blog-article__description">Заказывая утепление фасадов, люди практически не уделяют время выбору...</p>
+          </div>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

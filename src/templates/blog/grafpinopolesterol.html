@@ -1,0 +1,30 @@
+---
+title: Утеплитель на основе графитового пенополистирола
+route: blog
+blog: true
+---
+{% extends "layouts/_blog-layout.html" %}
+{% block content %}
+<div class="overlay"></div>
+<header class="blog-header">
+  <div class="blog-header-bg" style="background-image: url({% if blog %}../{% endif %}img/blog-header.jpg);"></div>
+  <div class="container header-container blog-header-container">
+    <h1>Новости</h1>
+  </div>
+</header>
+<main>
+  <article class="section">
+    <div class="container section-container last">
+      <div class="article-wrapper">
+        <div class="article-left">
+          <img src="../img/articles-img/1.jpg" alt="article-img">
+          <div class="after-img-text">Компания Greinplsat предлагает серый пенополистирол (неопор) изготовленный в соответствии с технологией BASF по цене <strong>1480 грн/м3</strong></div>
+        </div>
+        <div class="article-right">
+          <h2>Утеплитель на основе графитового пенополистирола</h2>
+          <p>Пенополистирол является самым популярным утеплителем. Впервые был изготовлен во Франции в 1928 году. Современный полистирол обладает улучшенными свойствами с точки зрения пожаробезопасности, является экологичным и безвредным. Цена графитового пенополистирола одна из самых приемлемых для утепления домов по системе «мокрый фасад». <br><br>Основным отличием серого пенополистирола от обычного, белого, в том, что в состав сырья входит графит (состоящий из углеродов), и серебро.<br><br>Они как зеркало отражают тепловые волны, заметно уменьшая потери тепла в помещении.</p>
+        </div>
+      </div>
+  </article>
+</main>
+{% endblock %}

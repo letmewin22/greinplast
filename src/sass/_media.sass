@@ -38,7 +38,7 @@
 			background: white
 			color: black
 			right: 0
-			top: -3.7vh
+			top: 0
 			width: 90%
 			height: 100vh
 			font-size: 20px
@@ -178,6 +178,46 @@
 		margin-left: 0px
 		h3
 			margin-top: 30px
+	.about-header-text
+		flex-direction: column
+		margin-top: 0px
+		p
+			margin-top: 30px
+			width: 100%
+		&.two-col
+			p
+				margin-right: 0px
+	.about-header
+		h1
+			font-size: 60px
+	.blog-header-container
+		h1
+			font-size: 60px
+	.about-content
+		h3
+			font-size: 24px
+		p 
+			margin-top: 30px
+			font-size: 18px
+	.blog-wrapper
+		justify-content: space-between
+	.blog-article
+		width: 48%
+		padding-bottom: 10px
+		margin-top: 40px
+		&:nth-child(3n+2)
+			margin-left: 0
+			margin-right: 0
+	.article-wrapper
+		flex-direction: column-reverse
+		.article-left
+			width: 100%
+			margin-top: 40px
+		.article-right
+			width: 100%
+	.after-img-text
+		margin-top: 25px
+		font-size: 20px
 
 
 
@@ -255,10 +295,14 @@
 		top: 20px
 	.pop-up-form
 		padding-bottom: 0px
+		padding-top: 0px
 	.pop-up-form-scroll
 		overflow-y: scroll
 		overflow-x: hidden
 		padding-bottom: 100px
+		padding-top: 60px
+		h2
+			font-size: 24px
 	h3
 		font-size: 18px
 	.section.with-bg .with-bg-block p
@@ -274,12 +318,31 @@
 		margin-top: 50px
 	.descriptor
 		font-size: 18px
+	.default-content-plus-text
+		margin-top: 30px
+	.contacts-page-wrapper
+		padding-top: 6.8vh
+
 
 
 
 @media (max-width: 610px)
 	.main-h1
 		width: 90%
+	.about-header
+		padding-top: 12.8vh
+	.blog-article
+		width: 100%
+		padding-bottom: 10px
+	.blog-article__text
+		margin-top: 20px
+		h3
+			+main
+			font-size: 24px
+		p
+			margin-top: 10px
+	.blog-wrapper
+		margin-top: 40px
 
 @media (max-width: 480px)
 	.main-h1
