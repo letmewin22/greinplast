@@ -88,23 +88,4 @@ export default class FormSubmit extends FormInputs {
     }
   }
 
-//   onchange() {
-//     this.input.addEventListener('input', function (e) {
-      
-//     }, false);
-//     that.form.onsubmit = (e) => {
-//     switch (that.phone.value) {
-
-//         case '':
-
-//           that.validation()
-//           e.preventDefault()
-
-//           return false
-
-//           break
-//   }
-// }
-// }
-
 }

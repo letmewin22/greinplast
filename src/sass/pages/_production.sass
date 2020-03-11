@@ -1,0 +1,104 @@
+.products-wrapper
+	margin-top: -80px
+
+.production-header
+	width: 100%
+	padding-top: 19.8vh
+	.production-header-text
+		width: 47%
+		p
+			margin-top: 25px
+
+.product-wrapper
+  margin-top: 100px
+
+.product-item
+  margin-top: 72px
+  cursor: pointer
+  .product-item-line 
+    background: rgba(255, 255, 255, 1)
+    width: 0%
+    height: 2px
+    display: block
+    &.dark
+        background: rgba($main-color, 0.5)
+  h2
+    line-height: 1.2em
+    transform: translateY(0px)
+    transition: color .5s ease
+    opacity: 0
+    user-select: none
+    will-change: color
+
+.product-p
+    padding-top: 28px
+    transform: translateY(0px)
+    opacity: 0
+    .button
+    	margin-top: 40px
+
+.product-item-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+  overflow: hidden
+  padding-top: 50px
+  padding-bottom: 40px
+
+.product-button
+  opacity: 0
+  display: inline-block
+  transform-origin: 50% 50%
+  transition: transform .5s ease
+  will-change: transform
+  img
+  	display: block
+  	user-select: none
+
+.product-item-left
+  width: 65%
+
+.product-item-right
+	width: 35%
+	img
+		object-fit: cover
+
+.product-h1
+  opacity: 0
+  width: 100%
+
+.product-active
+	.product-button
+		transform: rotate(135deg)
+		user-select: none
+	// .product-p
+	// 	height: 100%
+	h2
+		color: $accent-color
+	.product-item-line
+		&.dark 
+			background: $main-color
+			user-select: none
+
+
+.product-item-top
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.product-p-content__wrapper
+	display: flex
+	justify-content: space-between
+	margin-right: 80px
+	align-items: center
+	.romb
+		color: $accent-color
+		margin-right: 7px
+	p
+		margin-top: 10px
+
+.with-bg-block
+	.button
+		margin-top: 50px
+
