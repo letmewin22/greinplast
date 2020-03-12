@@ -1,12 +1,10 @@
 .navbar
 	width: 100%
-	position: absolute
+	position: fixed
 	top: 3.7vh
 	z-index: 10
 	color: white
-	// transform: translateY(-100%)
-	// opacity: 0
-	transition: transform 1s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+	transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1)
 	.nav-container
 		display: flex
 		justify-content: space-between
@@ -14,6 +12,15 @@
 	&.loaded
 		transform: translateY(0px)
 		opacity: 1
+	&.nav-bg
+		background: rgba($main-color, 0.9)
+		top: 0
+		padding: 20px 0
+		&.white
+			background: white
+	&.nav-hidden
+		opacity: 0
+		transform: translateY(-20px)
 
 
 	nav

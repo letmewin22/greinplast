@@ -3,8 +3,6 @@ import imagesLoaded from 'imagesloaded'
 import loading from '../preloader.js'
 import MainLoader from '../MainLoader.js'
 import footerRepresentations from '../ui/footer-representations.js'
-import FormSubmit from '../form/FormSubmit.js'
-import formWindowEvents from '../form/formWindowEvents.js'
 
 class CustomRendererServices extends Highway.Renderer {
   onEnterCompleted() {
@@ -15,8 +13,6 @@ class CustomRendererServices extends Highway.Renderer {
     if (loaderScreen.classList.contains('done') === true) {
       MainLoader()
 
-      new FormSubmit()
-      formWindowEvents()
       footerRepresentations()
     }
 
@@ -24,8 +20,6 @@ class CustomRendererServices extends Highway.Renderer {
       loading()
       MainLoader()
 
-      new FormSubmit()
-      formWindowEvents()
       footerRepresentations()
     })
   }

@@ -4,6 +4,7 @@ const AboutLoader = () => {
   const h1 = document.querySelector('h1')
   const text = document.querySelector('.about-header-text')
 
+
   const loadingAnimation = () => {
     const tl = new TimelineMax()
     tl

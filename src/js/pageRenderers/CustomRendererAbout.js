@@ -2,8 +2,7 @@ import Highway from '@dogstudio/highway'
 import AboutLoader from '../AboutLoader.js'
 import loading from '../preloader.js'
 import footerRepresentations from '../ui/footer-representations.js'
-import FormSubmit from '../form/FormSubmit.js'
-import formWindowEvents from '../form/formWindowEvents.js'
+
 
 class CustomRendererAbout extends Highway.Renderer {
   onEnterCompleted() {
@@ -13,8 +12,7 @@ class CustomRendererAbout extends Highway.Renderer {
     if (loaderScreen.classList.contains('done') === true) {
       AboutLoader()
 
-      new FormSubmit()
-      formWindowEvents()
+
       footerRepresentations()
 
     }
@@ -23,8 +21,6 @@ class CustomRendererAbout extends Highway.Renderer {
       loading()
       AboutLoader()
 
-      new FormSubmit()
-      formWindowEvents()
       footerRepresentations()
     })
   }

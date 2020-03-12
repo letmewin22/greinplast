@@ -1,6 +1,7 @@
 const burger = document.querySelector('.burger')
 const closeIcon = document.querySelector('.close-icon')
 const nav = document.querySelector('nav')
+const navItems = nav.querySelectorAll('a')
 const overlay = document.querySelector('.overlay')
 
 const navOpen = () => {
@@ -27,3 +28,6 @@ const navClose = () => {
 burger.addEventListener('click', navOpen)
 closeIcon.addEventListener('click', navClose)
 overlay.addEventListener('click', navClose)
+if (screen.width < 1171) {
+  navItems.forEach(elem => elem.addEventListener('click', navClose))
+}

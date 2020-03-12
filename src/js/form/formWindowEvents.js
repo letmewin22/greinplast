@@ -1,23 +1,50 @@
-const formWindowEvents = () => {
+class FormWindowEvents {
 
-  const openBtns = document.querySelectorAll('.form-handler')
-  const formPopUp = document.querySelector('.pop-up-form')
-  const closeBtn = formPopUp.querySelector('.close-form-icon')
+  constructor() {
 
-  const openEvent = () => {
-    formPopUp.classList.add('opened')
+    this.openBtns = document.querySelectorAll('.form-handler')
+    this.formPopUp = document.querySelector('.pop-up-form')
+    this.closeBtn = this.formPopUp.querySelector('.close-form-icon')
+
+    this.openBtns.forEach(elem => elem.addEventListener('click', () => this.openEvent()))
+    this.closeBtn.addEventListener('click', () => this.closeEvent())
+  }
+
+  openEvent() {
+
+    this.formPopUp.classList.add('opened')
     document.body.style.overflowY = 'hidden'
+    document.body.style.marginRight = `${this.calcScroll()}px`
+
   }
 
-  const closeEvent = () => {
-    formPopUp.classList.remove('opened')
-    document.body.style.overflowY = 'initial'
+  closeEvent() {
+
+    this.formPopUp.classList.remove('opened')
+    setTimeout(() => {
+      document.body.style.marginRight = '0px'
+      document.body.style.overflowY = 'initial'
+    }, 1000)
+    
   }
 
-  openBtns.forEach(elem => elem.addEventListener('click', openEvent))
+  calcScroll() {
 
-  closeBtn.addEventListener('click', closeEvent)
+    const div = document.createElement('div')
 
+    div.style.width = '50px'
+    div.style.height = '50px'
+    div.style.overflowY = 'scroll'
+    div.style.visibility = 'hidden'
+
+    document.body.appendChild(div)
+    const scrollWidth = div.offsetWidth - div.clientWidth
+    div.remove()
+
+    return scrollWidth
+  }
 }
 
-export default formWindowEvents
+
+
+export default FormWindowEvents
