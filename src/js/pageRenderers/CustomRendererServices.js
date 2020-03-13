@@ -1,5 +1,4 @@
 import Highway from '@dogstudio/highway'
-import imagesLoaded from 'imagesloaded'
 import loading from '../preloader.js'
 import MainLoader from '../MainLoader.js'
 import footerRepresentations from '../ui/footer-representations.js'

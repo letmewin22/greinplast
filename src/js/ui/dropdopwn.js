@@ -19,10 +19,12 @@ function dropDownLeave() {
 
   this.querySelector('.dropdown-content').classList.remove('open')
   this.querySelector('.only-mob').style.transform = 'rotate(0deg)'
+  if (screen.width < 1171) {
+    setTimeout(() => {
+      this.querySelector('.dropdown-content').style.display = 'none'
+    }, 500)
+  }
 
-  setTimeout(() => {
-    this.querySelector('.dropdown-content').style.display = 'none'
-  }, 500)
 }
 
 

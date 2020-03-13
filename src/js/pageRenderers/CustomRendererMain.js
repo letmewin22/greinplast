@@ -1,5 +1,4 @@
 import Highway from '@dogstudio/highway'
-import imagesLoaded from 'imagesloaded'
 import MainLoader from '../MainLoader.js'
 import loading from '../preloader.js'
 import MainScreen from '../ui/mainScreen.js'
@@ -10,7 +9,6 @@ class CustomRendererMain extends Highway.Renderer {
 
     MainScreen()
     const loaderScreen = document.querySelector('.loader-screen')
-    const allImg = document.querySelectorAll('.header-bg')
 
     if (loaderScreen.classList.contains('done') === true) {
       MainLoader()
