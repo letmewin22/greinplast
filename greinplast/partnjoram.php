@@ -1,0 +1,98 @@
+<?php
+/*
+Template Name: Partners
+*/
+get_header();
+?>
+<div class="site-wrapper" data-router-wrapper>
+   <div data-router-view="about">
+<div class="overlay"></div>
+<header class="about-header">
+  <div class="container header-container">
+    <h1>Партнёрам</h1>
+    <div class="about-header-text two-col">
+      <p class="bold">Уже работаете с материалами Greinplast или хотите попробовать?</p>
+      <p class="bold">Мы не только продаём материалы, но и развиваем экосистему для строителей.</p>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="info-block">
+    <div class="container section-container">
+      <div class="info-block-content">
+        <h2>Сотрудничая с нами, вы получаете:</h2>
+        <div class="info-block-content__wrapper">
+          <div class="info-block-content--left">
+            <p><span class="romb">♦</span>идеи дизайна интерьера и экстерьера;</p>
+            <p><span class="romb">♦</span>практические навыки работы с материалами Greinplast; </p>
+          </div>
+          <div class="info-block-content--right">
+            <p><span class="romb">♦</span>теоретические знания;</p>
+            <p><span class="romb">♦</span>полезные знакомства в строительно-ремонтной сфере. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper">
+        <div class="default-content-left">
+          <h2>Обучаем работе с материалами Greinplast</h2>
+          <span class="default-content-plus-text">Организовываем групповые поездки в Польшу на производство, где обучаем технологиям работы с материалами Greinplast.</span>
+          <p class="default-text">Эти знания повысят профессиональный уровень, и помогут реализовывать более сложные строительные задачи ваших клиентов.<br><br>Приезжайте к нам в офис: мы расскажем, какие задачи можно решить с помощью наших отделочных материалов, а также поделимся трендами во внутренней и наружной отделке.</p>
+          <button class="button form-handler">
+            <span class="bg"><?php include get_theme_file_path( '/components/blot.php' ); ?></span>
+            <span class="text">Обсудить сотрудничество</span></button>
+        </div>
+        <div class="default-content-right">
+          <img src="<?php echo get_field('картинка-1');?>" alt="greinplast">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container section-container">
+      <div class="default-content-wrapper reverse">
+        <div class="default-content-left">
+          <h2>Строителям</h2>
+          <span class="default-content-plus-text">Утепляете дома на заказ с командой?</span>
+          <p class="default-text">С нами вы улучшите репутацию и заработаете больше денег! <br>
+            <br>- Программа скидок для партнёров
+            <br>- Загруженность работой на наших строительных объектах
+            <br>- Бесплатные обучающие поездки на производство в Польшу с выдачей официальных сертификатов
+            <br>- Удобный формат сотрудничества для оптовых покупателей и строителей на взаимовыгодных условиях
+          </p>
+          <button class="button form-handler">
+            <span class="bg"><?php include get_theme_file_path( '/components/blot.php' ); ?></span>
+            <span class="text">Обсудить сотрудничество</span></button>
+        </div>
+        <div class="default-content-right">
+          <img src="<?php echo get_field('картинка-2');?>" alt="ecosystem">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container section-container last">
+      <div class="default-content-wrapper">
+        <div class="default-content-left">
+          <h2>Дизайнерам и архитекторам</h2>
+          <span class="default-content-plus-text">Помогаем реализовывать ваши дизайн-проекты.</span>
+          <p class="default-text">С отделочными материалами Greinplast можно дать волю фантазии! <br><br>Решайте поставленные клиентами задачи, а мы позаботимся о их практической реализации.
+            Хотите использовать для декора помещения или наружной отделки какое-то необычное визуальное решение, но сомневаетесь, что на рынке есть подходящий материал? <br><br>Мы подберём нужные материалы, чтобы вы реализовали свой проект именно так, как видите его у себя в голове. </p>
+          <button class="button form-handler">
+            <span class="bg"><?php include get_theme_file_path( '/components/blot.php' ); ?></span>
+            <span class="text">Обсудить сотрудничество</span></button>
+        </div>
+        <div class="default-content-right">
+          <img src="<?php echo get_field('картинка-3');?>" alt="ecosystem">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<?php include get_theme_file_path( '/components/footer.php' ); ?>
+
+<?php get_footer(); ?>
+
