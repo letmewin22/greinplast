@@ -1,7 +1,7 @@
 import {TimelineMax} from 'gsap'
 
 const h1 = document.querySelector('h1')
-const descriptor = document.querySelector('.descriptor')
+const descriptor = document.querySelector('.error-descriptor')
 
 
 const loadingAnimation = () => {

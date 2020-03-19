@@ -7,7 +7,7 @@ export default class FormInputs {
     this.phone = document.getElementById('phone')
     this.validateText = document.querySelector('.form-validate-text')
     this.formButton = document.querySelector('.form .button')
-    this.label = document.querySelector('label')
+    this.label = document.querySelectorAll('label')[2]
 
     this.koef = +this.validateText.getAttribute('data-value')
 

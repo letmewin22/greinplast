@@ -6,7 +6,7 @@ const overlay = document.querySelector('.overlay')
 
 const navOpen = () => {
 
-  document.body.style.position = 'fixed'
+  document.body.style.overflow = 'hidden'
   overlay.style.display = 'block'
   nav.style.display = 'block'
 
@@ -17,7 +17,7 @@ const navOpen = () => {
 
 const navClose = () => {
 
-  document.body.style.position = 'inherit'
+  document.body.style.overflow = 'initial'
   overlay.style.display = 'none'
   nav.classList.remove('is-open')
   setTimeout(() => {

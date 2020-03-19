@@ -1,4 +1,5 @@
 import Highway from '@dogstudio/highway'
+
 import Fade from './Fade'
 import CustomRendererMain from './pageRenderers/CustomRendererMain.js'
 import CustomRendererServices from './pageRenderers/CustomRendererServices.js'
@@ -7,6 +8,8 @@ import CustomRendererContacts from './pageRenderers/CustomRendererContacts.js'
 import CustomRendererBlog from './pageRenderers/CustomRendererBlog.js'
 import CustomRendererBlogArticle from './pageRenderers/CustomRendererBlogArticle.js'
 import CustomRendererProduction from './pageRenderers/CustomRendererProduction.js'
+import CustomRendererError from './pageRenderers/CustomRendererError.js'
+
 import FormSubmit from './form/FormSubmit.js'
 import FormWindowEvents from './form/formWindowEvents.js'
 
@@ -28,7 +31,8 @@ const H = new Highway.Core({
     contacts: CustomRendererContacts,
     blog: CustomRendererBlog,
     blogArticle: CustomRendererBlogArticle,
-    production: CustomRendererProduction
+    production: CustomRendererProduction,
+    error: CustomRendererError
   },
   transitions: {
     default: Fade

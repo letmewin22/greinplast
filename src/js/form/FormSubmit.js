@@ -29,15 +29,15 @@ export default class FormSubmit extends FormInputs {
   }
 
   requestLoad() {
-    const formCloseHandler = new FormWindowEvents()
-    
+    const formClose = new FormWindowEvents()
+
     let tl = new TimelineMax()
     tl
       .to(this.thankYouWindow, 1, { opacity: 1, ease: Power1.easeInOut })
       .to(this.thankYouWindowText, 1, { opacity: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .to(this.thankYouWindowText, 1, { opacity: 0, y: 40, ease: Power1.easeInOut, 
         onComlete: () => {
-          formCloseHandler.closeEvent()
+          formClose.closeEvent()
         }}, 4)
       .to(this.thankYouWindow, 1, { opacity: 0, ease: Power1.easeInOut }, 4.5)
       
@@ -66,7 +66,7 @@ export default class FormSubmit extends FormInputs {
         }
       })
         .then(response => response.status >= 200 && response.status < 400 ?
-          this.requestLoad() : alert('Something went wrong'))
+          this.requestLoad() : alert('При отправке произошла ошибка:('))
       // this.requestLoad() : this.requestLoad())
 
     } catch (e) {

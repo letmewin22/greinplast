@@ -1,12 +1,9 @@
 export default function MainScreen() {
 
-
-
   const h1 = document.querySelector('.main-h1')
   const h1Span = h1.querySelectorAll('.h1-links')
   const lines = document.querySelectorAll('.line')
   const bg = document.querySelectorAll('.header-bg')
-
 
   function Hover() {
     const line = this.querySelector('.line')
@@ -27,9 +24,6 @@ export default function MainScreen() {
       bg[this.getAttribute('data-bg')].style.opacity = 1
 
     }
-
-
-
   }
 
   function HoverOut() {

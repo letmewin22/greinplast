@@ -25,7 +25,6 @@ class FormWindowEvents {
       document.body.style.marginRight = '0px'
       document.body.style.overflowY = 'initial'
     }, 1000)
-    
   }
 
   calcScroll() {
