@@ -36,7 +36,7 @@ export default class FormSubmit extends FormInputs {
       .to(this.thankYouWindow, 1, { opacity: 1, ease: Power1.easeInOut })
       .to(this.thankYouWindowText, 1, { opacity: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .to(this.thankYouWindowText, 1, { opacity: 0, y: 40, ease: Power1.easeInOut, 
-        onComlete: () => {
+        onComplete: () => {
           formClose.closeEvent()
         }}, 4)
       .to(this.thankYouWindow, 1, { opacity: 0, ease: Power1.easeInOut }, 4.5)

@@ -5,7 +5,7 @@ const detectNavColors = () => {
   const navbarLogoMob = navbar.querySelector('.logo-img.mob')
 
   if (document.querySelector('[data-router-view]').getAttribute('data-router-view') === 'about' ||
-    document.querySelector('[data-router-view]').getAttribute('data-router-view') === 'production') {
+    document.querySelector('[data-router-view]').getAttribute('data-router-view') === 'production' || document.querySelector('[data-router-view]').getAttribute('data-router-view') === 'portfolio') {
     navbar.style.color = 'black'
     navbar.classList.add('white')
     navbar.querySelector('.button').classList.remove('border-button')

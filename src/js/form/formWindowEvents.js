@@ -14,7 +14,7 @@ class FormWindowEvents {
 
     this.formPopUp.classList.add('opened')
     document.body.style.overflowY = 'hidden'
-    document.body.style.marginRight = `${this.calcScroll()}px`
+    document.body.style.setProperty('--mr', `${this.calcScroll()}px`)
 
   }
 
@@ -22,7 +22,7 @@ class FormWindowEvents {
 
     this.formPopUp.classList.remove('opened')
     setTimeout(() => {
-      document.body.style.marginRight = '0px'
+      document.body.style.setProperty('--mr', '0px')
       document.body.style.overflowY = 'initial'
     }, 1000)
   }

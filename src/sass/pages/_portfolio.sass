@@ -1,0 +1,221 @@
+.portfolio
+  opacity: 0
+  
+.portfolio__items
+  display: flex
+  flex-wrap: wrap
+  margin-top: -25px
+  margin-left: -25px
+
+.portfolio__item
+  position: relative
+  flex: 0 0 calc(100% / 3)
+  margin-top: 25px
+  padding-left: 25px
+  overflow: hidden
+  cursor: pointer
+  height: 300px
+  @media screen and ( min-width: 960px )
+    &:hover
+      .portfolio__details
+        opacity: 1
+      .portfolio__img
+        img
+          transform: scale(1.05)
+  @media screen and ( max-width: 1500px )
+    height: 250px
+  @media screen and ( max-width: 1100px )
+    height: 208px
+  @media screen and ( max-width: 960px )
+    flex: 0 0 100%
+    height: 400px
+  @media screen and ( max-width: 660px ) 
+    height: 208px 
+    
+
+.portfolio__img
+  width: 100%
+  height: 100%
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    display: block
+    transition: transform .3s ease-out
+    object-fit: cover
+
+.portfolio__details
+  position: absolute
+  left: 25px
+  bottom: 0
+  background: rgba(#292B33, 0.7)
+  width: calc(100% - 25px)
+  color: white
+  line-height: 1em
+  padding: 15px 12px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media screen and ( min-width: 960px ) 
+    opacity: 0
+    transition: opacity .3s ease
+    padding: 20px 15px
+
+.portfolio__h
+  font-weight: 400
+  +main
+
+.portfolio__text
+  margin-top: 8px
+
+.portfolio-pop-up
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  background: white
+  z-index: 100000
+  transform: translateY(-110%)
+  transition: transform 0.5s ease-out
+  .container
+    position: relative
+    overflow-y: auto
+    padding-bottom: 100px
+  &.open
+    transform: translateY(0px)
+
+.portfolio-pop-up__close
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  padding: 40px 0
+  svg
+    cursor: pointer
+  @media screen and ( max-width: 768px )
+    padding: 20px 0
+
+.portfolio-pop-up__items
+  padding-top: 120px
+  @media screen and ( max-width: 1080px ) 
+    padding-top: 30px
+
+.portfolio-pop-up__item
+  display: none
+  opacity: 0
+  transition: opacity .5s ease
+  &.current
+    opacity: 1 
+  &.view
+    display: block
+
+.portfolio-pop-up__i-top
+  display: flex
+  justify-content: space-between 
+  align-items: center 
+  @media screen and ( max-width: 1080px ) 
+    flex-direction: column
+
+.portfolio-pop-up__i-left
+  width: 40%
+  @media screen and ( max-width: 1450px ) 
+    width: 50%
+  @media screen and ( max-width: 1080px ) 
+    width: 100%
+
+.portfolio-pop-up__i-right
+  width: 50%
+  height: 463px
+  img
+    display: block
+    height: 100%
+    width: 100%
+    object-fit: cover
+  @media screen and ( max-width: 1450px ) 
+    width: 46%
+  @media screen and ( max-width: 1280px ) 
+    height: 350px
+  @media screen and ( max-width: 1080px ) 
+    width: 100%
+    margin-top: 50px
+    height: 500px
+  @media screen and ( max-width: 660px ) 
+    height: 208px
+
+.portfolio-pop-up__descriptor
+  margin-bottom: 5px
+
+.portfolio-pop-up__text
+  margin-top: 25px
+  p + p
+    margin-top: 15px
+
+.portfolio-pop-up__facts
+  display: flex
+  margin-top: 50px
+  @media screen and ( max-width: 550px ) 
+    flex-direction: column
+    margin-top: 20px 
+
+.portfolio-pop-up__fact 
+  + .portfolio-pop-up__fact 
+    margin-left: 70px
+    @media screen and ( max-width: 550px ) 
+      margin-left: 0px
+      margin-top: 20px
+
+.portfolio-pop-up__f-bold
+  +medium
+  font-size: 24px
+
+.portfolio-pop-up__i-bottom
+  padding-top: 140px
+  @media screen and ( max-width: 1080px ) 
+    padding-top: 50px
+
+.portfolio-pop-up__slider
+  height: 85vh
+  width: 100%
+  position: relative
+  overflow: hidden
+  @media screen and ( max-width: 768px )
+    height: 30vh
+
+.slider__slides
+  width: 100%
+  height: 100%
+  position: relative
+  display: flex
+  // overflow: hidden
+
+.slider__slide
+  width: 100%
+  flex: 1 0 100%
+  height: 100%
+  +cover
+
+.slider__nav
+  position: absolute
+  top: 50%
+  width: 100%
+  display: flex
+  justify-content: space-between
+  transform: translateY(-50%)
+  padding: 0 30px
+  @media screen and ( max-width: 768px )
+   padding: 0 10px
+
+.slider__nav-item
+  cursor: pointer 
+  circle
+    transition: fill .3s ease
+  svg
+    display: block
+    transform-origin: center
+  @media screen and ( min-width: 960px ) 
+    &:hover  
+      circle 
+        fill: $accent-color
+
+.slider__nav-item--right
+  transform: rotate(180deg)

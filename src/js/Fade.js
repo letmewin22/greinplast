@@ -5,7 +5,7 @@ import imagesLoaded from 'imagesloaded'
 export default class Fade extends Highway.Transition {
   // Built-in methods
   out({ from, trigger, done }) {
-
+    document.body.classList.add('transition')
     let tl = new TimelineMax({ onComplete: done })
     tl
       .to(from, 0.4, { opacity: 0, ease: Power3.easeInOut })
@@ -18,6 +18,7 @@ export default class Fade extends Highway.Transition {
     let tl = new TimelineMax({
       onComplete: () => {
         imagesLoaded(document.body, { background: true }, function() {
+          document.body.classList.remove('transition')
           done()
         })
       }

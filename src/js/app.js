@@ -8,6 +8,7 @@ import CustomRendererContacts from './pageRenderers/CustomRendererContacts.js'
 import CustomRendererBlog from './pageRenderers/CustomRendererBlog.js'
 import CustomRendererBlogArticle from './pageRenderers/CustomRendererBlogArticle.js'
 import CustomRendererProduction from './pageRenderers/CustomRendererProduction.js'
+import CustomRendererPortfolio from './pageRenderers/CustomRendererPortfolio.js'
 import CustomRendererError from './pageRenderers/CustomRendererError.js'
 
 import FormSubmit from './form/FormSubmit.js'
@@ -19,7 +20,7 @@ import './ui/Nav.js'
 import './ui/navbar-scroll.js'
 import './ui/dropdopwn.js'
 import './scroll.js'
-
+import './lib/sayHello.js'
 
 
 
@@ -32,7 +33,8 @@ const H = new Highway.Core({
     blog: CustomRendererBlog,
     blogArticle: CustomRendererBlogArticle,
     production: CustomRendererProduction,
-    error: CustomRendererError
+    error: CustomRendererError,
+    portfolio: CustomRendererPortfolio
   },
   transitions: {
     default: Fade
@@ -54,3 +56,7 @@ H.on('NAVIGATE_END', () => {
   new FormSubmit()
   new FormWindowEvents()
 })
+
+
+
+
